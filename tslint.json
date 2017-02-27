@@ -1,0 +1,12 @@
+{
+  "extends": [
+    "tslint:latest"
+  ],
+  "rules": {
+    "variable-name": [
+      true,
+      "allow-leading-underscore",
+      "allow-pascal-case"
+    ]
+  }
+}

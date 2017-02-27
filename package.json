@@ -1,0 +1,44 @@
+{
+  "name": "sentimentalist",
+  "version": "0.0.1",
+  "description": "how do you really feel about your music",
+  "main": "dist/index.js",
+  "dependencies": {
+    "@blueprintjs/core": "^1.8.0",
+    "@types/classnames": "^0.0.32",
+    "@types/react": "0.14",
+    "@types/react-addons-css-transition-group": "0.14",
+    "@types/react-dom": "0.14",
+    "classnames": "^2.2.5",
+    "csstips": "^0.2.0",
+    "react": "^15.4.2",
+    "react-addons-css-transition-group": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "typestyle": "^1.1.1"
+  },
+  "devDependencies": {
+    "imports-loader": "^0.7.0",
+    "json-loader": "^0.5.4",
+    "npm-run-all": "^4.0.1",
+    "react-hot-loader": "^1.3.1",
+    "serve": "^3.4.1",
+    "ts-loader": "^1.3.1",
+    "tslint": "^4.4.2",
+    "typescript": "^2.1.4",
+    "webpack": "^1.14.0",
+    "webpack-dev-server": "^1.16.2"
+  },
+  "scripts": {
+    "now-build": "echo 'all clear over here'",
+    "build": "run-s copy webpack",
+    "clean": "rm -rf dist",
+    "copy": "mkdir -p dist && cp index.html dist/",
+    "dev": "webpack-dev-server --config webpack.config.dev.js --inline",
+    "start": "serve dist --cors",
+    "webpack": "NODE_ENV=\"production\" webpack",
+    "now": "now dist --static --name sentimentalist"
+  },
+  "repository": "git@github.com:giladgray/sentimentalist.git",
+  "author": "Gilad Gray <giladgray@gmail.com>",
+  "license": "Apache-2.0"
+}
