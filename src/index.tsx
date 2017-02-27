@@ -8,14 +8,12 @@ import { csstips, style, theme } from "./styles";
 FocusStyleManager.onlyShowFocusOnTabs();
 
 function reload() {
-    render(
-        <NonIdealState
-            action={<Button intent={Intent.SUCCESS} text="Login with Spotify" />}
-            description="how do you really feel about your music"
-            title="Sentimentalist"
-            visual="music"
-        />
-    );
+    render(<NonIdealState
+        action={<Button intent={Intent.SUCCESS} text="Login with Spotify" />}
+        description="how do you really feel about your music"
+        title="Sentimentalist"
+        visual="music"
+    />);
 }
 
 function render(gallery: React.ReactElement<any>) {
